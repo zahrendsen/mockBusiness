@@ -6,9 +6,9 @@
  *  contact delete                             *
  *********************************************/ 
 class Database {
-    private static $dsn = 'mysql:host=fdb20.awardspace.net;dbname=3054436_hopsdb';
+    private static $dsn = 'mysql:host=localhost;dbname=hopsdb';
     private static $username = 'root';
-    private static $password = 'Sh0eSl!nger';
+    private static $password = 'Pa$$w0rd';
     private static $db;
 
     private function __construct() {}
@@ -84,6 +84,7 @@ class EmployeeDB {
         return $employees;
     }
 }
+
 
 class VisitorContact{
     function deleteVisitor()
