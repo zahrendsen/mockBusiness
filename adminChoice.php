@@ -72,7 +72,7 @@ $password = filter_input(INPUT_POST, 'password');
             <a href="adminContact.php">Visitor Contact Report</a>
             <br>
             <br>
-            <a href="adminContact.php">Visitor Contact Report</a>
+            <a href="adminListEmployees.php">Employee List Report</a>
             <br>
             <br>
             <a href="adminSignUpList.php">Sign Up List Report</a>

@@ -99,7 +99,7 @@ class VisitorContact{
         $statement->bindValue(':visitorID', $visitorID);
         $statement->execute();
         $statement->closeCursor();
-        header("Location: admin_contact.php");
+        header("Location: adminContact.php");
     }
 
 function changeVisitorEmployee()
@@ -116,7 +116,7 @@ function changeVisitorEmployee()
         $statement->bindValue(':employeeID', $employeeID);
         $statement->execute();
         $statement->closeCursor();;
-        header("Location: admin_contact.php");
+        header("Location: adminContact.php");
     }
 }
 

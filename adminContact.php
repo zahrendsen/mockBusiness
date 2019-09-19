@@ -29,7 +29,7 @@ $employees = EmployeeDB::getEmployees();
 try {
     $db = Database::getDB();
 } catch (Exception $ex) {
-    echo 'connection error: ' . $e->getMessage();
+    echo 'Database username/password or directory error!';
     exit();
 }
 
@@ -123,7 +123,7 @@ if ($action == 'list_visitor') {
                         <td><?php echo $visitor['comments']; ?></td>
                         <td><?php echo $visitor['employeeID']; ?></td>
                         <td>
-                            <form name="editform" action="admin_contact.php" method="post">
+                            <form name="editform" action="adminContact.php" method="post">
                                 <select name="newEmployeeID">
                                     <?php foreach ($employees as $employee) {  ?>
                                         <?php $newEmployee = $employee->getID(); ?>
@@ -142,7 +142,7 @@ if ($action == 'list_visitor') {
                             </form>
                         </td>
                         <td>
-                            <form action="admin_contact.php" method="post">
+                            <form action="adminContact.php" method="post">
                                 <input type="hidden" name="action" value="delete_visitor">
                                 <input type="hidden" name="visitorID" value="<?php echo $visitor['visitorID']; ?>" />
                                 <input type="submit" value="Delete" />
